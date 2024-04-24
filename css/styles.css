@@ -1,0 +1,98 @@
+p ~table{
+    border: burlywood solid 2px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+h2{
+    color:red ;
+}
+.nav{
+    padding: 1rem;
+    color: aliceblue;
+text-align:  center;
+}
+
+.nav a{
+text-decoration: none;
+padding: 1rm;
+color: aliceblue;
+background-color: black;
+justify-content: space-between;
+}
+#main{
+margin: 30px;
+text-align: center;
+}
+aside {
+ border: 10px dotted;   
+ 
+}
+aside p{
+    color: dimgray;
+}
+aside article{
+    color: dimgray;
+}
+aside +p+ button {
+    color: cornflowerblue;
+}
+p~ article{
+background-color: aqua;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+
+}
+/* Pseudo classes and pseudo elements are used i CSS to target and style elements
+based on their state or position in the document,or to create virtual elements that don't exist in HTML.
+A pseudo-class is a selector that selects elements that are in a specific state.
+seudo-elements behave in a similar way. However, they act as if you had added a whole new HTML element into the markup,
+ rather than applying a class to existing elements. */
+
+
+ /* #Hover{
+    background-color: yello;
+ } */
+ #hover:hover h3
+ {
+    cursor: pointer;
+    display: block;
+ }
+h3{
+    background-color: yellow;
+    padding: 2rex;
+    display: none;
+}
+a:active{
+    color: purple;
+}
+tr th:first-child{
+background-color: yellowgreen;
+}
+tr td:first-child:hover{
+    color:crimson;
+  
+}
+p i:first-child
+{
+    color: blue;
+}
+p :is(i){
+    color: peru;
+}
+body ::selection{
+    color: yellowgreen;
+}
+.paragraph::first-line
+{
+    color: red;
+}
+.paragraph::first-letter{
+    color: blue;
+}
+article::before, article::after {
+content: url(https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif);
+width: 100px;
+height: 100px;
+}
